@@ -11,3 +11,12 @@ run-ticket:
 
 run-gateway:
 	go run ./cmd/api-gateway
+
+tidy:
+	go mod tidy
+
+docker-up:
+	docker compose up -d
+
+docker-down:
+	docker compose down
